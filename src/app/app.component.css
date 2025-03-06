@@ -31,7 +31,7 @@ a:hover {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .logo:hover {
@@ -252,7 +252,7 @@ a:hover {
 
 .arrow {
   position: relative;
-  right: -1200px;
+  right: -1150px;
   bottom: -1px;
 }
 
@@ -318,6 +318,10 @@ article .icon {
   cursor: default;
 }
 
+.pad1 {
+  padding: 1rem;
+}
+
 /* PROJECTS */
 
 #project {
@@ -332,7 +336,7 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 15%;
+  width: 6%;
   height: 90%;
 }
 
@@ -346,3 +350,65 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  background: rgb(250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+  height: 2rem;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+.linkedin {
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.fitwidth {
+  width: fit-content;
+  position: relative;
+  right: -1180px;
+  bottom: -100px;
+}

@@ -1,5 +1,5 @@
 <nav id="desktop-nav">
-  <div class="logo">Zohaib Akhtar Ansari</div>
+  <div class="logo">Zohaib Ansari</div>
   <div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
@@ -10,7 +10,7 @@
   </div>
 </nav>
 <nav id="hamburger-nav">
-  <div class="logo">Zohaib Akhtar Ansari</div>
+  <div class="logo">Zohaib Ansari</div>
   <div class="hamburger-menu">
     <div class="hamburger-icon" (click)="toggleMenu()">
       <span></span>
@@ -28,11 +28,11 @@
 
 <section id="profile">
   <div class="section_img">
-    <img src="p1.png" alt="Zohaib Ansari profile picture*/" />
+    <img src="photo.enc" alt="Zohaib profile picture*/" />
   </div>
   <div class="section-text">
     <p class="section-text-p1">Hello I am</p>
-    <h1 class="title">Zohaib Ansari</h1>
+    <h1 class="title">Zohaib Akhtar Ansari</h1>
     <p class="section-text-p2">Full-Stack developer</p>
     <div class="btn-container">
       <button class="btn btn-color-2" onClick="window.open('ZohaibResume.pdf')">
@@ -44,16 +44,16 @@
     </div>
     <div id="socials">
       <img
-        src="favicon.ico"
+        src="linkedin.jpg"
         alt="My Linkedin"
         class="icon"
-        onClick="location.href ='https.//linkedin.com/in/zohaib-ansari'"
+        onClick="window.open('https://linkedin.com/in/zohaib-ansari', '_blank')"
       />
       <img
-        src="favicon.ico"
+        src="github.png"
         alt="My Github"
         class="icon"
-        onClick="location.href ='www.Github.com'"
+        onClick="window.open('https://github.com/Zohaib-AA', '_blank')"
       />
     </div>
   </div>
@@ -64,63 +64,65 @@
   <h1 class="title">About me</h1>
   <div class="section-container">
     <div class="section-img-container">
-      <img src="p1.png" alt="Profile Picture" class="about-pic" />
+      <img src="photo.enc" alt="Profile Picture" class="about-pic" />
     </div>
     <div class="about-details-container">
       <div class="about-container">
         <div class="details-container">
-          <img src="favicon.ico" alt="Experience icon" class="icon" />
+          <img src="experience.png" alt="Experience icon" class="icon" />
           <h3>Experience</h3>
-          <p>3+years <br />Frontend Development</p>
+          <p>3.5+ years <br />Full-Stack Develover</p>
         </div>
         <div class="details-container">
-          <img src="favicon.ico" alt="Education icon" class="icon" />
+          <img src="ed.png" alt="Education icon" class="icon" />
           <h3>Education</h3>
-          <p>B.Tech <br />Bachelores degree</p>
+          <p>Bachelor of Technology <br />7.48 CGPA</p>
         </div>
       </div>
       <div class="text-container">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora odio
-        ratione corporis veniam dolorum, quo pariatur quaerat? Et vel maiores
-        itaque laudantium? Nobis dolore ab earum natus commodi reprehenderit
-        unde!
+        Dedicated IT professional with over 3.5 years of experience at Infosys,
+        demonstrating a strong progression in roles from Systems Engineer to
+        Senior Systems Engineer, and currently serving as a Tech Analyst. Proven
+        expertise in the CPQ (Configure, Price, Quote) domain within E-Commerce
+        projects, where I have successfully contributed to the design,
+        development, and implementation of solutions that enhance operational
+        efficiency and drive business growth.
       </div>
     </div>
   </div>
   <img
-    src="favicon.ico"
+    src="downArrow.png"
     alt="Arrow icons"
     class="icon arrow"
-    onClick="location.href=''"
+    onClick="location.href='/#experience'"
   />
 </section>
 
 <section id="experience">
   <p class="section-text-p1">Explore My</p>
-  <h1 class="title">Experience</h1>
+  <h1 class="title">Skills</h1>
   <div class="experience-details-container">
     <div class="about-container">
-      <div class="details-container">
-        <h2 class="experience-sub-title">Full-Stack Developer</h2>
+      <div class="details-container pad1">
+        <h2 class="experience-sub-title">Frontend</h2>
         <div class="article-container">
-          <article>
-            <img src="favicon.ico" alt="Ex icon" class="icon" />
+          <article *ngFor="let fSkill of frontendSkills">
+            <img src="black.jpg" alt="Check Mark" class="icon" />
             <div>
-              <h3>CSS</h3>
-              <p>Intermediate</p>
+              <h3>{{ fSkill.title }}</h3>
+              <p>{{ fSkill.level }}</p>
             </div>
           </article>
         </div>
       </div>
-      <div class="details-container">
-        <h2 class="experience-sub-title">Developer</h2>
-
+      <div class="details-container pad1">
+        <h2 class="experience-sub-title">Backend</h2>
         <div class="article-container">
-          <article>
-            <img src="favicon.ico" alt="Ex icon" class="icon" />
+          <article *ngFor="let bSkill of backendSkills">
+            <img src="black.jpg" alt="Ex icon" class="icon" />
             <div>
-              <h3>Node</h3>
-              <p>Basic</p>
+              <h3>{{ bSkill.title }}</h3>
+              <p>{{ bSkill.level }}</p>
             </div>
           </article>
         </div>
@@ -128,33 +130,91 @@
     </div>
   </div>
   <img
-    src="favicon.ico"
+    src="downArrow.png"
     alt="Arrow icons"
     class="icon arrow"
-    onClick="location.href=''"
+    onClick="location.href='/#project'"
   />
 </section>
 
 <section id="project">
   <p class="section-text-p1">Browse My Recent</p>
-  <h1 class="title">Projects</h1>
+  <h1 class="title">Project</h1>
   <div class="experience-details-container">
     <div class="about-container">
       <div class="details-container color-container">
         <div class="article-container">
           <img src="favicon.ico" alt="Project 1" class="project-img" />
         </div>
-        <h2 class="experience-sub-title project-title">Project One</h2>
+        <h2 class="experience-sub-title project-title">BuzzLine</h2>
+        <p class="text-container pad1">
+          Designed and developed a dynamic social post application that empowers
+          users to engage with a vibrant community by viewing, creating, and
+          sharing posts. The application features a user-friendly interface that
+          allows individuals to creating and sharing post.
+        </p>
         <div class="btn-container">
           <button
             class="btn btn-color-2 project-btn"
-            onClick="location.href=''"
+            onClick="window.open('https://github.com/Zohaib-AA', '_blank')"
           >
             Github
           </button>
-          <button class="btn btn-color-1">Live Demo</button>
+          <button
+            class="btn btn-color-1"
+            onClick="window.open('http://myangularbucketbuzz.s3-website.ap-south-1.amazonaws.com/', '_blank')"
+          >
+            Live Demo
+          </button>
         </div>
       </div>
     </div>
   </div>
+  <img
+    src="downArrow.png"
+    alt="Arrow icons"
+    class="icon arrow"
+    onClick="location.href='/#contact'"
+  />
 </section>
+
+<section id="contact">
+  <p class="section-text-p1">Get in touch</p>
+  <h1 class="title">Contact me</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img src="gmail.png" alt="Email icon" class="icon contact-icon" />
+      <p><a href="mailto:ansarizohaibakhter@gmail.com">Gmail</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img src="linkedin.jpg" alt="Linkedin icon" class="icon contact-icon" />
+      <p>
+        <a
+          onClick="window.open('https://linkedin.com/in/zohaib-ansari', '_blank')"
+          class="linkedin"
+          >Linkedin</a
+        >
+      </p>
+    </div>
+  </div>
+  <img
+    src="upkey.png"
+    alt="Arrow icons"
+    class="icon fitwidth"
+    onClick="location.href=''"
+  />
+</section>
+
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p>Copyright &#169; 2025 Zohaib Akhtar Ansari. All Rights Reserved</p>
+    </div>
+  </nav>
+</footer>
