@@ -223,9 +223,9 @@ a:hover {
   gap: 1rem;
 }
 
-/* ABOUT SECTION */
+/*EXPERIENCE SECTION */
 
-#about {
+#experience {
   position: relative;
   padding: 2rem;
 }
@@ -278,9 +278,9 @@ a:hover {
   margin: auto 0;
 }
 
-/* Experience Section */
+/* Skill Section */
 
-#experience {
+#skill {
   position: relative;
   padding: 2rem;
 }
